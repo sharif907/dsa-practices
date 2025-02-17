@@ -1,1 +1,47 @@
+prob1:Write a program which takes two values x and y. Prints x for y number of times.
+Input:2 ,3
+Expected Output:2,2,2
+class Main {
+    public static void main(String[] args) {
+        int x = 2;
+        int y = 3;
+        for(int i=0;i<y;i++){
+            System.out.println(x);
+        }
+    }
+}
 
+
+
+prob2:Write a program to take x and print multiples of x till 1000.
+Input:100
+Expected Output:100,200,300,400,500,600,700,800,900,1000
+
+class Main {
+    public static void main(String[] args) {
+        int x = 100;
+        for(int i=1;i<=10;i++){
+            int y = x*i;
+            System.out.println(y);
+        }
+    }
+}
+
+
+
+
+prob 3 :Write a program to get firstName and lastName and n as input and print fullName that is firstName+lastName for n times.
+
+Input:abdul,sharif,5
+Expected output: abdulsharif,abdulsharif,abdulsharif,abdulsharif,abdulsharif
+
+class Main {
+    public static void main(String[] args) {
+        String firstname = "abdul";
+        String lastname = "sharif";
+        int n = 5;
+        for(int i=0;i<n;i++){
+            System.out.println(firstname+lastname);
+        }
+    }
+}

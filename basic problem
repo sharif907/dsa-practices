@@ -1,4 +1,107 @@
-prob1:Write a program which takes two values x and y. Prints x for y number of times.
+Prob 1 : Write a program that takes an integer, then a string, then a char from the user and prints them in the screen.
+Input:  2 Name y
+Expected Output:2 Name y
+import java.util.Scanner;
+ class teacher {
+		public static void main(String[]args) {
+			 Scanner sc = new Scanner(System.in);
+		        int number = sc.nextInt();
+		        String name = sc.next();
+		        char a = sc.next().charAt(0);
+		        System.out.println(number);
+		        System.out.println(name);
+		        System.out.println(a);
+		}
+}
+
+
+Prob 2: Write a program to check whether a triangle can be formed with the given values for the angles.
+If sum of angles is equal to 180, then triangle can be formed, else it can't be formed.
+Input: 45 45 45
+Expected Output: Triangle cannot be formed
+class teacher {
+		public static void main(String[]args) {
+			 int angle1 = 45;
+			 int angel2 = 45;
+			 int angel3  = 45;
+			 int sumofangel = angle1+angel2+angel3;
+			 if(sumofangel==180) {
+				 System.out.print("then triangle can be formed");
+			 }
+		      
+		else {
+			System.out.print("it can't be formed");
+}
+		}
+ }
+
+prob3:Given mark of student, Print the Grade
+Grade A if mark is greater than or equal to 90
+Grade B if mark is greater than or equal to 80
+Grade C if mark if greater than or equal to 60
+Grade D if mark if greaer than or equal to 35
+Fail if mark is lesser than 35
+Input: 95
+Expected Output:
+Grade A
+
+public class main {
+	public static void main(String[] args) {
+	 int mark = 90;
+	 if(mark>=90) {
+		 System.out.print("grade A");
+	 }
+	 else if(mark>=90) {
+		 System.out.print("grade B");
+	 }
+	 else if(mark>=60) {
+		 System.out.print("grade C");
+	 }
+	 else if(mark>=35) {
+		 System.out.print("grade D");
+	 }
+	 else {
+		 System.out.print("fail");
+	 }
+
+	}
+
+}
+
+
+Prob 4: Write a program using switch case which takes a value and prints the respective Size.
+If size is 29 then its small
+If size is 30 then its Medium
+If size is 38 then its Large
+If size is 42 then its XLarge
+If size is not any of the above then Invalid.
+Input: 29
+Expected Output: Small
+
+public class main {
+	public static void main(String[] args) {
+	  int size = 42;
+	  switch(size) {
+	  case 29:
+		  System.out.print("its small");
+		  break;
+	  case 30:
+			  System.out.print("its medium");
+	           break;
+	  case 38:
+			  System.out.print("its large");
+		      break;
+	  case 42: 
+			  System.out.print("its xl large");
+		  break;
+		  default:		 
+			  System.out.print("invalid");
+	  }
+	  }
+	}
+
+
+prob5:Write a program which takes two values x and y. Prints x for y number of times.
 Input:2 ,3
 Expected Output:2,2,2
 class Main {
@@ -13,7 +116,7 @@ class Main {
 
 
 
-prob2:Write a program to take x and print multiples of x till 1000.
+prob6:Write a program to take x and print multiples of x till 1000.
 Input:100
 Expected Output:100,200,300,400,500,600,700,800,900,1000
 
@@ -30,7 +133,7 @@ class Main {
 
 
 
-prob 3 :Write a program to get firstName and lastName and n as input and print fullName that is firstName+lastName for n times.
+prob 7 :Write a program to get firstName and lastName and n as input and print fullName that is firstName+lastName for n times.
 
 Input:abdul,sharif,5
 Expected output: abdulsharif,abdulsharif,abdulsharif,abdulsharif,abdulsharif

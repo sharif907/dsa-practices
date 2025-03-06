@@ -17,3 +17,26 @@ public class Main {
         System.out.println(count);
   }
 }
+
+Write a program that gets n as input and print all the prime numbers till that number.
+Testcase 1 :
+Input : 5
+Expected output:2 3 5
+
+class Main {
+    public static void main(String[] args) {
+        int n = 5;
+        int count=0;
+        for(int i =1;i<=n;i++){
+            for(int k=1;k<=n;k++){
+            if(i%k==0){
+                count++;
+            }
+            }
+        if(count==2){
+            System.out.println(i);
+        }
+        count = 0;
+        }
+        }
+}
